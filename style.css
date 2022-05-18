@@ -1,37 +1,127 @@
-html,
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v28/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4n.ttf) format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-color: rgb(85, 107, 47);
-    color: rgb(238,232,170);
-    font-style: italic;
-    }
+  font-family: "Open Sans", sans-serif;
+  background-color: #52796F;
+  color: white;
+}
 
-    .letra {
-        width: 20%;
-        height: 20%;
-        margin: 1em 0.5em 0.5em 0.5em;
-        display: inline-block;
-    }
+.letra {
+  width: 20%;
+  height: 20%;
+  margin: 1em 0.5em 0.5em 0.5em;
+  display: inline-block;
+}
 
-    .texto_letra {
-        width: 25%;
-        height: 2em;
-        border-radius: 20px;
-        text-align: center;
-    }
+.texto_letra {
+  width: 25%;
+  height: 2em;
+  border-radius: 20px;
+  text-align: center;
+}
 
-    .tem {
-        background-color: rgb(214, 229, 57) !important;
-    }
+.tem {
+  background-color: rgb(214, 229, 57) !important;
+}
 
-    .certo {
-        background-color: rgb(134, 206, 134) !important;
-    }
+.certo {
+  background-color: rgb(134, 206, 134) !important;
+}
 
-    .errado {
-        background-color: rgb(255, 0, 0) !important;
-    }
+.errado {
+  background-color: rgb(255, 0, 0) !important;
+}
 
-    .não_classificada {
-        background-color: rgb(76, 0, 255);
-    }
+.não_classificada {
+  background-color: rgb(76, 0, 255);
+}
 
+.titulo {
+  font-size: 70px;
+}
+
+p {
+  font-size: 30px;
+}
+
+#palavra {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .menu-h nav ul {
+  list-style: none;
+}
+
+.container .menu-h nav ul li {
+  padding: 25px;
+  display: inline-block;
+}
+
+a {
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 7px;
+  padding: 10px;
+
+}
+
+a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#botao {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: rgb(238, 232, 170);
+  background-color: rgb(218, 165, 32);
+  border-radius: 10px;
+}
+
+
+.form{
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  width: 60%;
+  height: 23px;
+  border-radius: 5px;
+}
