@@ -1,0 +1,139 @@
+/* LIRIEL PISETTA */
+
+/*@font-face vai especificar a fonte customizada*/
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v28/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4n.ttf) format('truetype');
+}
+
+/*Deixa um espaçamento de valor padrão para todos os navegadores*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Nesse elemento chamamos a fonte customiza, definimos a cor da fonte e um background padrão para o site*/
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #52796F;
+  color: white;
+}
+
+
+/* Constituido a forma das caixas de entrada das letras */
+.texto_letra {
+  width: 25%;
+  height: 2.5em;
+  border-radius: 30px;
+  text-align: center;
+}
+
+/* Definição de cores das letras correspondentes */
+.tem {
+  background-color: rgb(214, 229, 57) !important;
+}
+
+.certo {
+  background-color: rgb(134, 206, 134) !important;
+}
+
+.errado {
+  background-color: rgb(255, 0, 0) !important;
+}
+
+.não_classificada {
+  background-color: rgb(76, 0, 255);
+}
+
+/*Define que todos os elementos com a classe titulo tenham um tamanho de 70px */
+.titulo {
+  font-size: 70px;
+}
+
+/*Define que todos os parágrafos da página tenham 30px*/
+p {
+  font-size: 30px;
+}
+
+/* Alinhamento da caixa de palavras */
+#palavra {
+  display: inline-flex;
+  justify-content: center;
+}
+
+/*Nessa classe definimos que o posicionamento do bloco de código seja centralizado*/
+.container {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Aqui tiramos todo o estilo padrão da lista*/
+.container .menu-h nav ul {
+  list-style: none;
+}
+
+.container .menu-h nav ul li {
+  padding: 25px;
+  /*Define a distância entra as opções*/
+  display: inline-block;
+  /*As opções serão distribuidas em uma unica linha, quebrando a lógica do flex-direction: column; definida na classe container*/
+}
+
+/*Definição da estilização dos links*/
+a {
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 7px;
+  padding: 10px;
+
+}
+
+/*Define como o link irá se comportar ao passar o mouse*/
+a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/*Define tamanho, borda e cor do botão*/
+#botao {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: rgb(238, 232, 170);
+  background-color: rgb(218, 165, 32);
+  border-radius: 10px;
+}
+
+/*Define o posicionamento da formulário dentro da estrutura da página*/
+.form {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tamanho das caixas de texto do Login e Cadastro */
+input {
+  width: 60%;
+  height: 23px;
+  border-radius: 5px;
+}
